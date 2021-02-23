@@ -56,13 +56,13 @@ def _onUnMuteRequest(client, cb):
                 except UserNotParticipant:
                     client.answer_callback_query(
                         cb.id,
-                        text=f"❗ අපේ @{channel} channel එකට Join වෙලා 'UnMute Me' button එක ආපහු ඔබන්න.",
+                        text=f"❗ Join @{channel} channel Setelah Join Tekan 'UnMute Me' button Gaes.",
                         show_alert=True,
                     )
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="❗ ඔයාව වෙන හේතුවක් නිසා Admin ල mute කරලයි ඉන්නෙ.",
+                    text="❗ You for another reason  Admin untuk mute කරලයි ඉන්නෙ.",
                     show_alert=True,
                 )
         else:
